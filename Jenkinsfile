@@ -9,7 +9,8 @@ pipeline {
   stages {
     stage('Clonar repo') {
       steps {
-        git 'https://github.com/darrasca/jenkins-ci-n8n-pipeline.git'
+        git branch: 'main',
+            url: 'https://github.com/darrasca/jenkins-ci-n8n-pipeline.git'
       }
     }
 
